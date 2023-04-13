@@ -22,7 +22,8 @@ function Header() {
             <Image
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/814px-Apple_logo_black.svg.png"
               layout="fill"
-              objectFit="contain"
+              objectFit="contain" 
+              alt=""
             />
           </div>
         </Link>
