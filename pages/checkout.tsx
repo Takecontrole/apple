@@ -98,7 +98,7 @@ function Checkout() {
                   <div className="flex justify-between">
                     <p>Subtotal</p>
                     <p>
-                      <Currency quantity={basketTotal} currency="USD" />
+                      <Currency quantity={basketTotal} currency="RUB" />
                     </p>
                   </div>
                   <div className="flex justify-between">
@@ -113,14 +113,14 @@ function Checkout() {
                         <ChevronDownIcon className="h-6 w-6" />
                       </p>
                     </div>
-                    <p>$ -</p>
+                    <p>₱ -</p>
                   </div>
                 </div>
 
                 <div className="flex justify-between pt-4 text-xl font-semibold">
                   <h4>Total</h4>
                   <h4>
-                    <Currency quantity={basketTotal} currency="USD" />
+                    <Currency quantity={basketTotal} currency="RUB" />
                   </h4>
                 </div>
               </div>
@@ -135,7 +135,7 @@ function Checkout() {
                       <span>Pay Monthly</span>
                       <span>with Apple Card</span>
                       <span>
-                        $283.16/mo. at 0% APR<sup className="-top-1">◊</sup>
+                        ₱283.16/mo. at 0% APR<sup className="-top-1">◊</sup>
                       </span>
                     </h4>
                     <Button title="Check Out with Apple Card Monthly Installments" />
