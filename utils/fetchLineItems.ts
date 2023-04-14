@@ -1,6 +1,6 @@
 export const fetchLineItems = async (sessionId: string) => {
   const res = await fetch(
- `http://localhost:3000/api/getSession?session_id=${sessionId}`
+ `https://take-control-delta.vercel.app/api/getSession?session_id=${sessionId}`
 );
 
   if (!res.ok) return;
