@@ -35,7 +35,7 @@ function Button({ title, onClick, width, loading, padding, noIcon }: Props) {
             ></path>
           </svg>
         )}
-        {loading ? "Loading..." : title}
+        {loading ? "Загрузка..." : title}
       </span>
     </button>
   );

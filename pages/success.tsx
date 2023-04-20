@@ -47,7 +47,7 @@ function Success({ products }: Props) {
   return (
     <div>
       <Head>
-        <title>Thank you! - Apple</title>
+        <title>Спасибо Вам! -</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="mx-auto max-w-xl">
@@ -117,7 +117,7 @@ function Success({ products }: Props) {
             <p className="hidden lg:inline">Need help? Contact us</p>
             {mounted && (
               <Button
-                title="Continue Shopping"
+                title="Продолжить покупки"
                 onClick={() => router.push("/")}
                 width={isTabletOrMobile ? "w-full" : undefined}
                 padding="py-4"

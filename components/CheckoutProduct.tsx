@@ -44,7 +44,7 @@ function CheckoutProduct({ id, items }: Props) {
           </div>
 
           <p className="flex cursor-pointer items-end text-blue-500 hover:underline">
-            Show product details
+          Показать детали
             <ChevronDownIcon className="h-6 w-6" />
           </p>
         </div>
@@ -52,14 +52,14 @@ function CheckoutProduct({ id, items }: Props) {
           <h4 className="text-xl font-semibold lg:text-2xl">
             <Currency
               quantity={items.reduce((total, item) => total + item.price, 0)}
-              currency="USD"
+              currency="RUB"
             />
           </h4>
           <button
             onClick={removeItemFromBasket}
             className="text-blue-500 hover:underline"
           >
-            Remove
+            удалить
           </button>
         </div>
       </div>
