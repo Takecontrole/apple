@@ -140,7 +140,7 @@ function Checkout() {
                     </h4>
                     <Button title="Оформить ежемесячную рассрочку" />
                     <p className="mt-2 max-w-[240px] text-[13px]">
-                   рассрочка 0% с картой "take control"
+                   рассрочка 0% с картой take control
                     </p>
                   </div>
 
