@@ -83,7 +83,7 @@ const Home = ({ categories, products }: Props) => {
        <section className="sticky top-0 mx-auto flex h-screen items-center justify-center">
  <div >
         <video  autoPlay muted loop 
-            style={{ width: '900px', height: '900px' }} >
+            layout="fill" objectFit="cover" >
         <source src="/medium .mp4" />
       </video>
 
