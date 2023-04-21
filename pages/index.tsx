@@ -9,7 +9,7 @@ import { fetchCategories } from "../utils/fetchCategories";
 import { fetchProducts } from "../utils/fetchProducts";
 import { getSession } from "next-auth/react";
 import Image from "next/image";
-
+import Reveal from 'react-reveal/Reveal';
 
 import type { Session } from "next-auth";
 interface Props {
@@ -69,12 +69,12 @@ const Home = ({ categories, products }: Props) => {
              
             <Tab.Panels className="mx-auto max-w-fit pt-10 pb-24 sm:px-4">
                
-            
+            <Reveal  >
               <Tab.Panel className="tabPanel">{showProducts(0)}</Tab.Panel>
               <Tab.Panel className="tabPanel">{showProducts(1)}</Tab.Panel>
               <Tab.Panel className="tabPanel">{showProducts(2)}</Tab.Panel>
               <Tab.Panel className="tabPanel">{showProducts(3)}</Tab.Panel>
-               
+               </Reveal  >
             </Tab.Panels>
           </Tab.Group>
         </div>
@@ -191,8 +191,8 @@ const Home = ({ categories, products }: Props) => {
       <section className="relative z-40 -mt-[100vh] mx-auto flex items-center justify-center min-h-screen bg-[#1B1B1B]"> 
             <div className="mx-auto max-w-fit pt-20 pb-24 w-11/12 mb-10 ">
             
-            
             <div className="relative flex justify-center items-center  w-350 h-[520px] bg-black rounded-3xl">
+            <Reveal  >
               
                 <h1 className="absolute top-10 block bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent text-2xl text-center" > Интерактивная <p>выемка и датчик FaceID</p></h1>
                 <div className="absolute bottom-0"> 
@@ -206,10 +206,10 @@ const Home = ({ categories, products }: Props) => {
             objectPosition="top"
           />
         </div>
-          
+          </Reveal  >
         </div>
                     
-             
+             <Reveal  >
                
                 <div className="relative flex justify-center items-center pt-10"> 
              <h1 className="absolute bottom-12 block text-gray-200 text-2xl drop-shadow-lg text-center" > 48MP камера <span>Умопомрачительная детализация</span></h1>
@@ -223,7 +223,9 @@ const Home = ({ categories, products }: Props) => {
           />
         </div>
           
-      
+      </Reveal>
+
+          <Reveal  >
           
      <video className="mb-10 rounded-3xl" autoPlay muted loop width="400"
             height="500"
@@ -243,9 +245,11 @@ const Home = ({ categories, products }: Props) => {
           /> 
                       </div>
           
+          </Reveal>
+
           
             <div className="relative flex justify-start items-center  w-350 h-[450px] bg-black rounded-3xl mb-10">
-              
+              <Reveal  >
                 <h1 className="absolute ml-5 top-5 block bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent text-3xl text-center" > Вдохновение <p>за всем этим</p></h1>
                 <div className="absolute bottom-0"> 
     
@@ -258,10 +262,12 @@ const Home = ({ categories, products }: Props) => {
             objectPosition="left"
               /> 
                       </div>
-        
+        </Reveal>
+
         </div>
             <div className="relative flex justify-center items-center  w-350 h-[560px] bg-black rounded-3xl">
               
+          <Reveal  >
                 <h1 className="absolute top-10 block bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent text-2xl text-center" > Керамический щит <p>Крепче любого стекла у смартфона</p></h1>
                 <div className="absolute bottom-0">  
                 
@@ -277,7 +283,7 @@ const Home = ({ categories, products }: Props) => {
           />
             
         </div>
-        
+        </Reveal>
         </div>
 
       
